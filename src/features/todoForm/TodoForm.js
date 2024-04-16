@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
 const TodoForm = () => {
-
-  // const [todoText, setTodoText] = useState('');
 
   return (
     <div className="todo-div">
