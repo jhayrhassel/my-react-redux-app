@@ -1,5 +1,7 @@
 .App {
-  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -11,15 +13,6 @@
   .App-logo {
     animation: App-logo-float infinite 3s ease-in-out;
   }
-}
-
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
 }
 
 .App-link {
@@ -36,4 +29,103 @@
   100% {
     transform: translateY(0px);
   }
+}
+
+.background-image-container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.background-image {
+  object-fit: cover;
+  width: 100%;
+  min-height: 100%;
+  transform: scale(1.5);
+  filter: brightness(0.5) blur(5px);
+}
+
+.weather {
+  height: 100px;
+  background-color: green;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+}
+
+.main-container {
+  display: flex;
+  flex-grow: 1;
+}
+
+.next-prev-button {
+  width: 100px;
+  height: 100px;
+  align-self: center;
+  background: none;
+  border: none;
+  color: white;
+  opacity: .5;
+}
+
+.shit-class {
+  font-size: 60px;
+  cursor: pointer;
+}
+
+.todo-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.next-background {
+  width: 100px;
+}
+
+.todo-div {
+  background: rgba(255, 255, 255, 0.25);
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 10px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+h1 {
+  margin: 12px 12px 12px;
+  color: white;
+}
+
+input {
+  line-height: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 25px;
+  border-width: 0px 0px 2px;
+  background-color: transparent;
+  border-color: white;
+  outline: 0;
+  color: white;
+}
+
+.todo-form {
+}
+
+.todo-list {
+  flex-grow: 3;
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 10px;
+  border-radius: 10px;
+  padding: 20px;
 }
