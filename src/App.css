@@ -71,10 +71,10 @@ main {
   background: none;
   border: none;
   color: white;
-  opacity: .5;
+  opacity: 0.5;
 }
 
-.shit-class {
+.next-prev-button-icon {
   font-size: 60px;
   cursor: pointer;
 }
@@ -122,10 +122,95 @@ input {
 }
 
 .todo-list {
+  display: flex;
+  align-items: flex-start;
   flex-grow: 3;
   background: rgba(255, 255, 255, 0.25);
   border: 1px solid rgba(255, 255, 255, 0.2);
   margin: 10px;
   border-radius: 10px;
   padding: 20px;
+}
+
+.per-todo-container {
+  border-radius: 5px;
+  padding: 30px;
+  position: relative;
+  border: solid 1px rgba(255, 255, 255, 0.5);
+}
+
+.red-todo {
+  background-color: rgba(254, 0, 0, 0.25);
+}
+
+.green-todo {
+  background-color: rgba(116, 238, 21, 0.25);
+}
+
+.blue-todo {
+  background-color: rgba(77, 238, 234, 0.25);
+}
+
+.orange-todo {
+  background-color: rgba(255, 170, 0, 0.25);
+}
+
+.yellow-todo {
+  background-color: rgba(255, 231, 0, 0.25);
+}
+
+.done-todo {
+  background-color: rgba(255, 255, 255, 0.25);
+  opacity: 0.25;
+}
+
+.todo-ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.todo-li {
+  margin: 0px 20px 20px 0px;
+  color: white;
+  font-size: 18px;
+}
+
+.per-todo-container:hover .todo-btns {
+  opacity: 1;
+}
+
+.per-todo-container button {
+  border-radius: 10px;
+  margin-right: 5px;
+  border: solid 1px rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  padding: 4px 8px;
+  outline: none;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 8px 35px 0px gray;
+}
+
+.per-todo-container button:hover {
+  filter: brightness(1.1);
+}
+
+.todo-btns {
+  display: flex;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  opacity: 0;
+  transition: opacity 0.1s ease-in;
+}
+
+.remove {
+  background-color: rgba(255, 70, 70, 0.25);
+}
+
+.done {
+  background-color: rgba(60, 179, 113, 0.25);
 }
