@@ -1,11 +1,13 @@
 import React from "react";
 import "./App.css";
 import BackgroundImage from "./features/backgroundImage/BackgroundImage";
-import TodoForm from "./features/todoForm/TodoForm";
+import TodoForm from "./features/todo/TodoForm";
 import PrevImgBtn from "./features/navigateBtn/PrevImgBtn";
 import NextImgBtn from "./features/navigateBtn/NextImgBtn";
+import TodoList from "./features/todo/TodoList";
 
 function App() {
+
   return (
     <div className="App">
       <BackgroundImage />
@@ -17,7 +19,7 @@ function App() {
           <PrevImgBtn />
           <div className="todo-container">
             <TodoForm />
-            <div className="todo-list"></div>
+            <TodoList />
           </div>
           <NextImgBtn />
         </div>

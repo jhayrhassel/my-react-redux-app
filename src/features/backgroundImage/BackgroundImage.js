@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { loadBackgroundImage, selectedBackgroundImage, selectedBackgroundImageIndex } from "./BackgroundImageSlice";
+import { loadBackgroundImage, selectedBackgroundImage, selectedBackgroundImageIndex } from "./backgroundImageSlice";
 
 
 const BackgroundImage = () => {
