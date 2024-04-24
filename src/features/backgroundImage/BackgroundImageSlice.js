@@ -1,5 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
+
 const url =
   "https://api.unsplash.com/search/photos?query=philippine+scenery&client_id=abZGlr3lHRtFDOLDnKoXDEwkKM1CoViT8SbBGzm34T4";
 
