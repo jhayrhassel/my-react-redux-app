@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import backgroundImageSlice from "../features/backgroundImage/backgroundImageSlice";
+import backgroundImageSlice from "../features/backgroundImage/backgroundImagesSlice";
 import todoFormSlice from "../features/todo/todoFormSlice";
 // import counterReducer from '../features/counter/counterSlice';
 

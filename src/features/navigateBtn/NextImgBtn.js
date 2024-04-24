@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
-import { selectNextBackgroundImage } from "../backgroundImage/backgroundImageSlice";
+import { selectNextBackgroundImage } from "../backgroundImage/backgroundImagesSlice";
 import { useDispatch } from "react-redux";
 
 const NextImgBtn = () => {
