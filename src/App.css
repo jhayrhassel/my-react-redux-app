@@ -118,9 +118,6 @@ input {
   color: white;
 }
 
-.todo-form {
-}
-
 .todo-list {
   display: flex;
   align-items: flex-start;
