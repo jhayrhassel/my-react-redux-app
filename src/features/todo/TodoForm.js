@@ -14,8 +14,6 @@ const TodoForm = () => {
       isDone: false
     }
 
-    console.log('Value');
-    console.log(newTodo);
     dispatch(addTodo(newTodo));
     setTodoValue('');
   }
