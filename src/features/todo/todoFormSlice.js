@@ -5,15 +5,15 @@ export const todoFormSlice = createSlice({
   initialState: {
     todoList: [
       {
-        todo: "Sample Todo 1",
+        todo: "Cook Food",
         isDone: false,
       },
       {
-        todo: "Sample Todo 2",
+        todo: "Exercise",
         isDone: false,
       },
       {
-        todo: "Sample Todo 3",
+        todo: "Drink Vitamins",
         isDone: false,
       },
     ],

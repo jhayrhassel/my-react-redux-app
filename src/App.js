@@ -5,9 +5,9 @@ import TodoForm from "./features/todo/TodoForm";
 import PrevImgBtn from "./features/navigateBtn/PrevImgBtn";
 import NextImgBtn from "./features/navigateBtn/NextImgBtn";
 import TodoList from "./features/todo/TodoList";
+import Quotes from "./features/quotes/Quotes";
 
 function App() {
-
   return (
     <div className="App">
       <BackgroundImage />
@@ -25,7 +25,7 @@ function App() {
         </div>
       </main>
       <footer>
-        <div style={{ height: "100px", backgroundColor: "blue" }}></div>
+        <Quotes />
       </footer>
     </div>
   );

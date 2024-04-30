@@ -8,7 +8,6 @@ const Todo = ({ children, isDone, index }) => {
 
   return (
     <li className="todo-li">
-      {console.log('isDone: ' + isDone)}
       <div
         className={
           (isDone ? `done` : (todoBGColor[index % todoBGColor.length])) + `-todo per-todo-container`
