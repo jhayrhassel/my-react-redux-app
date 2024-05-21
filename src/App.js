@@ -6,13 +6,14 @@ import PrevImgBtn from "./features/navigateBtn/PrevImgBtn";
 import NextImgBtn from "./features/navigateBtn/NextImgBtn";
 import TodoList from "./features/todo/TodoList";
 import Quotes from "./features/quotes/Quotes";
+import Weather from "./features/weather/Weather";
 
 function App() {
   return (
     <div className="App">
       <BackgroundImage />
       <header>
-        <div className="weather"></div>
+        <Weather />
       </header>
       <main>
         <div className="main-container">

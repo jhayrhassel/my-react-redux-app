@@ -1,12 +1,10 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
-
-const url =
-  "https://api.unsplash.com/search/photos?query=philippine+scenery&client_id=abZGlr3lHRtFDOLDnKoXDEwkKM1CoViT8SbBGzm34T4";
+const url = `https://api.unsplash.com/search/photos?query=philippine+scenery&client_id=${process.env.REACT_APP_UNSPLASH_CLIENT_ID}`;
 
 export const loadBackgroundImage = createAsyncThunk(
   "backgroundImage/loadBackgroundImage",
-  async (arg) => {
+  async () => {
     const response = await fetch(url);
     const json = await response.json();
 
@@ -24,10 +22,13 @@ export const backgroundImageSlice = createSlice({
   },
   reducers: {
     selectNextBackgroundImage: (state) => {
-      state.currentBackgroundIndex = (state.currentBackgroundIndex + 1) % state.backgroundImages.length;
+      state.currentBackgroundIndex =
+        (state.currentBackgroundIndex + 1) % state.backgroundImages.length;
     },
     selectPreviousBackgroundImage: (state) => {
-      state.currentBackgroundIndex = (state.currentBackgroundIndex - 1 + state.backgroundImages.length) % state.backgroundImages.length;
+      state.currentBackgroundIndex =
+        (state.currentBackgroundIndex - 1 + state.backgroundImages.length) %
+        state.backgroundImages.length;
     },
   },
   extraReducers: (builder) => {
@@ -48,8 +49,10 @@ export const backgroundImageSlice = createSlice({
   },
 });
 
-export const selectedBackgroundImage = (state) => state.backgroundImage.backgroundImages;
-export const selectedBackgroundImageIndex = (state) => state.backgroundImage.currentBackgroundIndex;
+export const selectedBackgroundImage = (state) =>
+  state.backgroundImage.backgroundImages;
+export const selectedBackgroundImageIndex = (state) =>
+  state.backgroundImage.currentBackgroundIndex;
 export const { selectNextBackgroundImage, selectPreviousBackgroundImage } =
   backgroundImageSlice.actions;
 
